@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="HelloModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
