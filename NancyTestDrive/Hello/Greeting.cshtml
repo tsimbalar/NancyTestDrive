@@ -1,0 +1,15 @@
+﻿@using NancyTestDrive;
+@using Nancy.ViewEngines.Razor
+@inherits NancyRazorViewBase<GreetingModel>
+@{
+    Layout = "_Layout";
+}
+<p>This content from the index page</p>
+<h3>Partials</h3>
+<p>Login box below rendered via a partial view with no model.</p>
+<div id="login">
+    @Html.Partial("login")
+</div>
+<h3>Encoding</h3>
+<p>Model output can also be encoded:</p>
+<p>@Model.Name</p>
