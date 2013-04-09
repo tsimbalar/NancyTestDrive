@@ -63,7 +63,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Hello\Greeting.sshtml" />
+    <None Include="Hello\login.sshtml" />
     <Content Include="Web.config" />
+    <Content Include="Hello\MasterPage.sshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HelloModule.cs" />

@@ -16,19 +16,15 @@ namespace NancyTestDrive
             // would capture routes like /hello/nancy sent as a GET request
             Get["/hello/{name}"] = parameters =>
                 {
-                    //var model = this.Bind<HelloModel>();
-                    // or 
-                    //HelloModel model = this.Bind();
-                    // or
-                    var model = new HelloModel();
-                    this.BindTo(model);
-                    return "Hello " + model.Name;
+                    // bind from querystring, form, body etc
+                    var model = this.Bind<GreetingModel>();
+                    return View[model];
                 };
         }
 
     }
 
-    public class HelloModel
+    public class GreetingModel
     {
         public string Name { get; set; }
     }
