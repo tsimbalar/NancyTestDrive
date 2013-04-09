@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Nancy;
+using Nancy.ModelBinding;
 
 namespace NancyTestDrive
 {
@@ -14,21 +15,21 @@ namespace NancyTestDrive
 
             // would capture routes like /hello/nancy sent as a GET request
             Get["/hello/{name}"] = parameters =>
-            {
-                return "Hello " + parameters.name;
-            };
-
-            // would capture routes like /products/1034 sent as a DELETE request
-            Delete[@"/products/(?<id>[\d]{1,7})"] = parameters =>
-            {
-                return 200;
-            };
-
-            // would capture routes like /users/192/add/moderator sent as a POST request
-            Post["/users/{id}/add/{category}"] = parameters =>
-            {
-                return HttpStatusCode.OK;
-            };
+                {
+                    //var model = this.Bind<HelloModel>();
+                    // or 
+                    //HelloModel model = this.Bind();
+                    // or
+                    var model = new HelloModel();
+                    this.BindTo(model);
+                    return "Hello " + model.Name;
+                };
         }
+
+    }
+
+    public class HelloModel
+    {
+        public string Name { get; set; }
     }
 }
