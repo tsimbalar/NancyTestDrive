@@ -21,7 +21,6 @@ namespace NancyTestDrive
                     return View[model];
                 };
         }
-
     }
 
     public class GreetingModel

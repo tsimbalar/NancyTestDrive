@@ -1,0 +1,7 @@
+﻿@Master['MasterPage']
+    
+@Section['Content']
+    <p>This content from the index page<p>
+    <p>Model output can also be encoded:</p>
+    <p><span id="userName" class="userInfo">@Model.Name</span></p>
+@EndSection
