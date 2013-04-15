@@ -73,6 +73,7 @@
     <Compile Include="HelloModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceModule.cs" />
+    <Compile Include="ThibaudDiagnosticProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
