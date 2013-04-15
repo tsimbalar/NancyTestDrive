@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyTestDrive.Tests", "Nan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyWcfApp", "NancyWcfApp\NancyWcfApp.csproj", "{B2FE9D19-C3A1-4FDB-B6D8-E6E9EFE1BE94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancySelfHostApp", "NancySelfHostApp\NancySelfHostApp.csproj", "{E8E5CE3C-5339-4182-BED9-ECC7243269B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{B2FE9D19-C3A1-4FDB-B6D8-E6E9EFE1BE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2FE9D19-C3A1-4FDB-B6D8-E6E9EFE1BE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2FE9D19-C3A1-4FDB-B6D8-E6E9EFE1BE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E5CE3C-5339-4182-BED9-ECC7243269B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E5CE3C-5339-4182-BED9-ECC7243269B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E5CE3C-5339-4182-BED9-ECC7243269B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E5CE3C-5339-4182-BED9-ECC7243269B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,8 +16,6 @@ namespace NancyWcfApp
         {
             const string bindToAddress = "http://localhost:1234/nancy/";
 
-            var t = typeof (HelloModule); // force reference to other project where Modules are defined
-
             var host = new WebServiceHost(new NancyWcfGenericService(), new Uri(bindToAddress));
             host.AddServiceEndpoint(typeof (NancyWcfGenericService), new WebHttpBinding(), "");
             
@@ -31,6 +29,8 @@ namespace NancyWcfApp
 
         }
 
+
+        // force reference to other project where Modules are defined
         private static Type ForceReferenceToAssemblyWithModules = typeof (HelloModule);
     }
 }
