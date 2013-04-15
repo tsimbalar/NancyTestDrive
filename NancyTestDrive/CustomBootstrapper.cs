@@ -15,7 +15,8 @@ namespace NancyTestDrive
         protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
         {
             base.ApplicationStartup(container, pipelines);
-            StaticConfiguration.EnableRequestTracing = true;
+            // uncomment this to enable Request Trace
+            //StaticConfiguration.EnableRequestTracing = true;
         }
 
         protected override Nancy.Diagnostics.DiagnosticsConfiguration DiagnosticsConfiguration
