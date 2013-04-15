@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using Nancy;
 using Nancy.ModelBinding;
-using NancyTestDrive.Model;
 
 namespace NancyTestDrive
 {
@@ -12,7 +11,7 @@ namespace NancyTestDrive
     {
         public HelloModule()
         {
-            Get["/"] = parameters => View["login", new IndexViewModel()];
+            Get["/"] = parameters => "Hello World!";
 
             // would capture routes like /hello/nancy sent as a GET request
             Get["/hello/{name}"] = parameters =>
